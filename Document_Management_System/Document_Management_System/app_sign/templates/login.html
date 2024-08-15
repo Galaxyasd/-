@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .left-panel {
+            background-color:rgb(234,242, 243);
+            padding: 40px;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        .left-panel img {
+            width: 80%;
+        }
+        .left-panel h2 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .right-panel {
+            width: 55%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .tab-button {
+            background-color:white;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-button {
+            background-color:rgb(22, 186, 139);
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .register-link {
+            text-align: center;
+            margin-top: 20px;
+            color:rgb(22, 186, 139);
+        }
+        .register-link a {
+            color: rgb(22, 186, 139);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2></h2>
+            <img src="/static/img/niu.png" alt="Logo">
+        </div>
+        <div class="right-panel">
+            <form method="post">
+                {% csrf_token %}
+                <button class="tab-button" type="button">密码登录</button>
+                <div class="form-group">
+                    <label for="username">手机号/账号</label>
+                    <input type="text" id="username" name="username" placeholder="手机号/账号" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">密码</label>
+                    <input type="password" id="password" name="password" placeholder="密码" required>
+                </div>
+                <button class="login-button" type="submit">登录</button>
+            </form>
+            <div class="register-link">
+                没有账号？<a href="{% url 'register' %}">立即注册</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
