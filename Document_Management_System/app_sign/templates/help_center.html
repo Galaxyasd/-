@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帮助中心</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #ffffff;
+            border-right: 1px solid #e0e0e0;
+            padding-top: 20px;
+        }
+        .sidebar img.logo {
+            display: block;
+            margin: 0 auto;
+            height: 50px;
+        }
+        .menu {
+            margin-top: 20px;
+        }
+        .menu-item {
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            color: #333;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .menu-item:hover {
+            background-color: #eee;
+        }
+        .menu-item.selected {
+            background-color: #16BA8B;
+            color: #ffffff;
+        }
+        .menu-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            fill: currentColor;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #ffffff;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .content-header {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .settings-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .settings-button:hover {
+            background-color: #555;
+        }
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 120px); /* Adjust height to fit in the view */
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+        .chat-header {
+            background-color: #16BA8B;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .chat-content {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+        .chat-history {
+            width: 30%;
+            border-right: 1px solid #e0e0e0;
+            padding: 10px;
+            overflow-y: auto;
+            background-color: #f9f9f9;
+        }
+        .chat-history h2 {
+            margin-top: 0;
+            font-size: 16px;
+            color: #333;
+        }
+        .chat-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+        }
+        .messages {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+        }
+        .message {
+            margin-bottom: 10px;
+        }
+        .input-area {
+            border-top: 1px solid #e0e0e0;
+            padding: 10px;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+        }
+        .input-area input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .input-area button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #16BA8B;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .input-area button:hover {
+            background-color: #43E794;
+        }
+        .suggestions {
+            border-top: 1px solid #e0e0e0;
+            padding: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        }
+        .suggestions h2 {
+            margin: 0 0 10px;
+            font-size: 16px;
+            color: #333;
+        }
+        .suggestions ul {
+            list-style: none;
+            padding: 0;
+        }
+        .suggestions li {
+            padding: 8px 0;
+            cursor: pointer;
+            color: #16BA8B;
+            transition: color 0.3s;
+        }
+        .suggestions li:hover {
+            color: #43E794;
+        }
+    </style>
+    <!-- 包含Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KyZXEAg3QhqLMpG8r+Knujsl5/yyj1U6YDJVxhxG+pnWeRSEEFlL709HfuCLUDpP5OZBMnTUnpHBFokgfUzrGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="/static/img/loge.jpg" alt="Logo" class="logo">
+            <div class="menu">
+                <a href="/upload" class="menu-item">
+                    <i class="fas fa-file menu-icon"></i>我的文件
+                </a>
+                <a href="/text_recognition" class="menu-item">
+                    <i class="fas fa-file-signature menu-icon"></i>文本识别
+                </a>
+                <a href="/text_classification" class="menu-item">
+                    <i class="fas fa-folder-plus menu-icon"></i>文档分类
+                </a>
+                <a href="/help_center" class="menu-item selected">
+                    <i class="fas fa-question-circle menu-icon"></i>帮助中心
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-header">
+                <h1>帮助中心</h1>
+                <button class="settings-button">设置</button>
+            </div>
+            <div class="chat-container">
+                <div class="chat-header">帮助中心对话</div>
+                <div class="chat-content">
+                    <div class="chat-history">
+                        <h2>历史对话</h2>
+                        <!-- 历史对话区域 -->
+                    </div>
+                    <div class="chat-area">
+                        <div class="messages">
+                            <!-- 聊天消息区域 -->
+                        </div>
+                        <div class="input-area">
+                            <input type="text" placeholder="请输入您的问题...">
+                            <button>发送</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="suggestions">
+                    <h2>猜你想问</h2>
+                    <ul>
+                        <li>如何快速上手系统</li>
+                        <li>如何修改密码</li>
+                        <li>如何联系支持</li>
+                        <li>如何更新信息</li>
+                        <li>如何查看使用记录</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入Font Awesome的图标库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-Fo3rlrQkTyFLFvjUyh1rbzg9dBZPWL5Sz8hkdLMEeHpJtM4VWnR4B1sDk0Zl6sPbU1s3x1YQ2Z5V1SC6Sypcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

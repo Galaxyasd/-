@@ -1,3 +1,4 @@
+from django.core.files.storage import FileSystemStorage
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
@@ -5,6 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.contrib import messages
 from .models import UserProfile
+
 
 # Create your views here.
 # 登录视图
@@ -21,7 +23,7 @@ def login_view(request):
                 # Django的默认用户模型通常不会以明文存储密码，而是使用加密的形式
                 # 这里假设你还没有使用django自带的用户身份验证体系
                 messages.success(request, "登录成功！")
-                return redirect('home')  # 登录成功后跳转到主页
+                return redirect('/help_center/')  # 登录成功后跳转到主页
             else:
                 messages.error(request, "密码错误，请重试。")
         except UserProfile.DoesNotExist:
@@ -50,3 +52,23 @@ def register_view(request):
                 return redirect('login')
 
     return render(request, 'register.html')
+
+
+def upload_file(request):
+    return render(request, 'upload.html')
+
+
+def login_first(request):
+    return render(request, 'login_first.html')
+
+
+def help_center(request):
+    return render(request, 'help_center.html')
+
+
+def text_recognition(request):
+    return render(request, 'text_recognition.html')
+
+
+def text_classification(request):
+    return render(request, 'text_classification.html')

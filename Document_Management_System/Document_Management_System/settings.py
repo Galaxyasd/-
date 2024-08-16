@@ -80,6 +80,7 @@ WSGI_APPLICATION = 'Document_Management_System.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+#数据库注册
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -131,3 +132,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

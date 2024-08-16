@@ -17,8 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app_sign import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login/', views.login_view, name='login'),
-    path('register/', views.register_view, name='register'),
+    path('login/', views.login_view, name='login'),  # 登陆网址跳转
+    path('register/', views.register_view, name='register'),  # 注册网址跳转
+    path('upload/', views.upload_file, name='upload_file'),
+    path('login_first/', views.login_first, name='login_first'),
+    path('help_center/', views.help_center, name='help_center'),
+    path('text_recognition/', views.text_recognition, name='text_recognition'),
+    path('text_classification/', views.text_classification, name='text_classification'),
 ]
