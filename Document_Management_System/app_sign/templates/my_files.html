@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的文件</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #ffffff;
+            border-right: 1px solid #e0e0e0;
+            padding-top: 20px;
+        }
+        .sidebar img.logo {
+            display: block;
+            margin: 0 auto;
+            height: 50px;
+        }
+        .menu {
+            margin-top: 50px;
+        }
+        .menu-item {
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            color: #333;
+            text-decoration: none;
+        }
+        .menu-item:hover {
+            background-color: #eee;
+        }
+        .menu-item.selected {
+            background-color: rgb(22, 186, 139);
+            color: #ffffff;
+        }
+        .menu-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            fill: currentColor;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #ffffff;
+            position: relative;
+        }
+        .content-header {
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .action-buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .upload-button {
+            padding: 10px 20px;
+            background-color: rgb(22, 186, 139);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            display: block;
+        }
+        .search-box {
+            padding: 8px;
+            border: 1px solid #d0d0d0;
+            border-radius: 4px;
+            width: 200px;
+            margin-left: auto;
+        }
+        .document {
+            background-color: #fdfdfd;
+            position: relative;
+            padding: 20px;
+            border: none;
+            margin-top: -20px;
+        }
+        .settings-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #e0e0e0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        tr.button-row {
+            cursor: pointer;
+        }
+        tr.button-row:hover {
+            background-color: #f9f9f9;
+        }
+        .divider {
+            border: 0;
+            border-top: 1px solid #e0e0e0;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="/static/img/loge.jpg" alt="Logo" class="logo">
+            <div class="menu">
+                <a href="/my_files" class="menu-item selected">
+                    <i class="fas fa-file menu-icon"></i> 我的文件
+                </a>
+                <a href="/text_recognition" class="menu-item">
+                    <i class="fas fa-font menu-icon"></i> 文本识别
+                </a>
+                <a href="/text_classification" class="menu-item">
+                    <i class="fas fa-folder-open menu-icon"></i> 文档分类
+                </a>
+                <a href="/help_center" class="menu-item">
+                    <i class="fas fa-question-circle menu-icon"></i> 帮助中心
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <button class="settings-button">设置</button>
+            <div class="content-header">
+                <h1>我的文件</h1>
+            </div>
+            <div class="action-buttons">
+                <form action="{% url 'my_files' %}" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }} <!-- 渲染表单 -->
+                    <button type="submit" class="upload-button">上传文件</button>
+                </form>
+                <form method="get" action="{% url 'my_files' %}">
+                    <input type="text" name="search" value="{{ search_query }}" class="search-box" placeholder="搜索文件...">
+                    <select name="sort_by" onchange="this.form.submit()">
+                        <option value="default" {% if sort_by == 'default' %}selected{% endif %}>默认排序</option>
+                        <option value="name" {% if sort_by == 'name' %}selected{% endif %}>按文件名排序</option>
+                        <option value="recent" {% if sort_by == 'recent' %}selected{% endif %}>按最近更新时间排序</option>
+                    </select>
+                </form>
+            </div>
+            <hr class="divider">
+            <div class="document">
+                <table>
+                    <tr>
+                        <th>文件名</th>
+                        <th>文件属性</th>
+                        <th>最近更新</th>
+                        <th>大小</th>
+                    </tr>
+                    {% for file in files %}
+                    <tr class="button-row">
+                        <td>{{ file.name }}</td>
+                        <td>{{ file.attributes }}</td>
+                        <td>{{ file.upload_date|date:"Y-m-d H:i" }}</td>
+                        <td>{{ file.size|filesizeformat }}</td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="4">没有找到相关文件</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-Fo3rlrQkTyFLFvjUyh1rbzg9dBZPWL5Sz8hkdLMEeHpJtM4VWnR4B1sDk0Zl6sPbU1s3x1YQ2Z5V1SC6Sypcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

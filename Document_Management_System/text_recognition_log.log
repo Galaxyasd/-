@@ -1,0 +1,147 @@
+2024-08-19 17:12:19,124 - INFO - Watching for file changes with StatReloader
+2024-08-19 17:12:30,414 - ERROR - 非法文件类型上传: image/png
+2024-08-19 17:12:30,414 - WARNING - Bad Request: /upload/
+2024-08-19 17:12:45,229 - INFO - 文件上传成功: 测试文档.pdf
+2024-08-19 17:12:45,234 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:12:47,447 - INFO - OCR处理时间: 2.212797164916992 秒
+2024-08-19 17:12:47,447 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:12:55,120 - INFO - 文件上传成功: hua.pdf
+2024-08-19 17:12:55,134 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:13:06,794 - INFO - OCR处理时间: 11.659659147262573 秒
+2024-08-19 17:13:06,810 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:19:08,927 - INFO - Watching for file changes with StatReloader
+2024-08-19 17:19:27,241 - INFO - 文件上传成功: hua.pdf
+2024-08-19 17:19:27,264 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:19:34,106 - INFO - OCR处理时间: 6.84177041053772 秒
+2024-08-19 17:19:34,121 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:19:46,489 - INFO - 文件上传成功: 测试文档.pdf
+2024-08-19 17:19:46,498 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:19:47,851 - INFO - OCR处理时间: 1.351339340209961 秒
+2024-08-19 17:19:47,851 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:19:51,421 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:19:52,800 - INFO - OCR处理时间: 1.3788847923278809 秒
+2024-08-19 17:19:52,802 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:19:54,414 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:19:55,707 - INFO - OCR处理时间: 1.2922227382659912 秒
+2024-08-19 17:19:55,707 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:19:57,542 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:19:58,840 - INFO - OCR处理时间: 1.2972211837768555 秒
+2024-08-19 17:19:58,842 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:19:59,791 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:20:01,129 - INFO - OCR处理时间: 1.3374409675598145 秒
+2024-08-19 17:20:01,129 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:20:41,561 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:20:43,073 - INFO - OCR处理时间: 1.5117528438568115 秒
+2024-08-19 17:20:43,073 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:20:56,127 - INFO - Watching for file changes with StatReloader
+2024-08-19 17:21:03,972 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:21:05,395 - INFO - OCR处理时间: 1.4224951267242432 秒
+2024-08-19 17:21:05,395 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:21:15,060 - INFO - 文件上传成功: 测试文档.pdf
+2024-08-19 17:21:15,069 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:21:16,493 - INFO - OCR处理时间: 1.4229176044464111 秒
+2024-08-19 17:21:16,495 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:26:41,509 - INFO - Watching for file changes with StatReloader
+2024-08-19 17:26:55,913 - INFO - 文件上传成功: hua.pdf
+2024-08-19 17:26:55,928 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:27:02,598 - INFO - OCR处理时间: 6.6689887046813965 秒
+2024-08-19 17:27:02,614 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:27:14,617 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:27:16,354 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:27:18,322 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:27:19,270 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:27:21,603 - INFO - OCR处理时间: 6.986154317855835 秒
+2024-08-19 17:27:21,606 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:27:23,284 - INFO - OCR处理时间: 6.929774761199951 秒
+2024-08-19 17:27:23,301 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:27:25,762 - INFO - OCR处理时间: 7.44009256362915 秒
+2024-08-19 17:27:25,773 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:27:26,628 - INFO - OCR处理时间: 7.356257677078247 秒
+2024-08-19 17:27:26,639 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:33:33,742 - INFO - Watching for file changes with StatReloader
+2024-08-19 17:33:39,904 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:33:39,965 - ERROR - OCR 处理失败: Unable to get page count.
+I/O Error: Couldn't open file 'D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf': No error.
+
+2024-08-19 17:33:40,013 - WARNING - Not Found: /media/uploads/hua.pdf
+2024-08-19 17:33:58,250 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:34:04,733 - INFO - OCR处理时间: 6.48319411277771 秒
+2024-08-19 17:34:04,746 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:34:14,596 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:34:15,432 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:34:21,238 - INFO - OCR处理时间: 6.642550706863403 秒
+2024-08-19 17:34:21,250 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:34:22,085 - INFO - OCR处理时间: 6.653282880783081 秒
+2024-08-19 17:34:22,101 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:34:29,904 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:34:36,361 - INFO - OCR处理时间: 6.4567883014678955 秒
+2024-08-19 17:34:36,362 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:34:36,929 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:34:43,607 - INFO - OCR处理时间: 6.67715311050415 秒
+2024-08-19 17:34:43,607 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:34:51,066 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:34:52,369 - INFO - OCR处理时间: 1.303086519241333 秒
+2024-08-19 17:34:52,371 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:35:38,824 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:35:40,232 - INFO - OCR处理时间: 1.4064383506774902 秒
+2024-08-19 17:35:40,235 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:37:18,961 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:37:20,267 - INFO - OCR处理时间: 1.3055341243743896 秒
+2024-08-19 17:37:20,270 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:39:07,581 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:39:14,136 - INFO - OCR处理时间: 6.555062294006348 秒
+2024-08-19 17:39:14,154 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\hua.pdf
+2024-08-19 17:41:59,736 - INFO - Watching for file changes with StatReloader
+2024-08-19 17:42:29,169 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:42:30,594 - INFO - OCR处理时间: 1.423609972000122 秒
+2024-08-19 17:42:30,599 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:42:53,495 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:42:54,752 - INFO - OCR处理时间: 1.25639009475708 秒
+2024-08-19 17:42:54,752 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:46:35,506 - INFO - Watching for file changes with StatReloader
+2024-08-19 17:46:42,340 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:46:43,493 - INFO - OCR处理时间: 1.1528279781341553 秒
+2024-08-19 17:46:43,495 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:46:54,140 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:46:55,473 - INFO - OCR处理时间: 1.3327641487121582 秒
+2024-08-19 17:46:55,476 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:47:16,833 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:47:18,124 - INFO - OCR处理时间: 1.2914481163024902 秒
+2024-08-19 17:47:18,127 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:47:24,037 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:47:25,330 - INFO - OCR处理时间: 1.2932014465332031 秒
+2024-08-19 17:47:25,332 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\测试文档.pdf
+2024-08-19 17:47:47,750 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\CMOS_FIFO电路.pdf
+2024-08-19 17:47:50,304 - INFO - OCR处理时间: 2.5529258251190186 秒
+2024-08-19 17:47:50,306 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\CMOS_FIFO电路.pdf
+2024-08-19 17:51:17,373 - INFO - Watching for file changes with StatReloader
+2024-08-19 17:51:29,697 - INFO - Watching for file changes with StatReloader
+2024-08-19 17:51:31,459 - WARNING - Not Found: /favicon.ico
+2024-08-19 17:51:35,393 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\CMOS_FIFO电路.pdf
+2024-08-19 17:51:37,883 - INFO - OCR处理时间: 2.4899799823760986 秒
+2024-08-19 17:51:37,885 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\CMOS_FIFO电路.pdf
+2024-08-19 17:53:39,063 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\ceshi.pdf
+2024-08-19 17:53:47,331 - INFO - OCR处理时间: 8.268171310424805 秒
+2024-08-19 17:53:47,336 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\ceshi.pdf
+2024-08-19 17:56:18,175 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\ceshi.pdf
+2024-08-19 17:56:26,655 - INFO - OCR处理时间: 8.47995400428772 秒
+2024-08-19 17:56:26,657 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\ceshi.pdf
+2024-08-19 18:00:08,458 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\ceshi_w9hfErx.pdf
+2024-08-19 18:00:19,192 - INFO - OCR处理时间: 10.734803676605225 秒
+2024-08-19 18:00:19,197 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\ceshi_w9hfErx.pdf
+2024-08-19 18:02:37,217 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\ceshi_w9hfErx.pdf
+2024-08-19 18:02:48,515 - INFO - OCR处理时间: 11.296860218048096 秒
+2024-08-19 18:02:48,522 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\ceshi_w9hfErx.pdf
+2024-08-19 18:09:19,672 - INFO - D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\app_sign\views.py changed, reloading.
+2024-08-19 18:09:20,615 - INFO - Watching for file changes with StatReloader
+2024-08-19 18:10:03,943 - INFO - D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\app_sign\views.py changed, reloading.
+2024-08-19 18:10:04,615 - INFO - Watching for file changes with StatReloader
+2024-08-19 18:10:27,252 - INFO - D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\app_sign\views.py changed, reloading.
+2024-08-19 18:10:28,133 - INFO - Watching for file changes with StatReloader
+2024-08-19 18:11:52,518 - INFO - D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\app_sign\views.py changed, reloading.
+2024-08-19 18:11:53,430 - INFO - Watching for file changes with StatReloader
+2024-08-19 18:29:13,802 - INFO - Watching for file changes with StatReloader
+2024-08-19 18:29:21,664 - INFO - Processing file: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\ceshi_w9hfErx.pdf
+2024-08-19 18:29:33,272 - INFO - OCR处理时间: 11.607619524002075 秒
+2024-08-19 18:29:33,281 - INFO - OCR 处理成功，文件路径: D:\HuaweiMoveData\Users\28740\Desktop\Document Management System\Document_Management_System\media\uploads\ceshi_w9hfErx.pdf
+2024-08-19 18:29:33,304 - WARNING - Not Found: /text_recognition/logo.jpg

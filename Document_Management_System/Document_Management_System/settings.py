@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(09vs=mus@jm$h4!ol80bct0xmegb#_$=-)g--srb%sw@ku$+s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -128,8 +128,38 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+
+
+
+###############################
+import os
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+os.environ["PATH"] += os.pathsep + r"D:\AppGallery\poppler\poppler-24.07.0\Library\bin"
+# 添加 Tesseract 路径
+os.environ["TESSDATA_PREFIX"] = r"D:\AppGallery\Tesseract-OCR"
+
+
+
+###############################################################################
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+
+import logging
+
+# 配置logging
+logging.basicConfig(
+    level=logging.INFO,
+    filename='text_recognition_log.log',
+    filemode='a',  # 'a'表示追加模式，'w'表示覆盖模式
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
+# 获取logger实例
+logger = logging.getLogger(__name__)

@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>应用界面</title>
+    <title>文本识别</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
             margin: 0;
         }
+
         .container {
             display: flex;
             height: 100vh;
         }
+
         .sidebar {
             width: 200px;
             background-color: #ffffff;
             border-right: 1px solid #e0e0e0;
             padding-top: 20px;
         }
+
         .sidebar img.logo {
             display: block;
             margin: 0 auto;
             height: 50px;
         }
+
         .menu {
             margin-top: 50px;
         }
+
         .menu-item {
             padding: 15px 20px;
             cursor: pointer;
@@ -36,31 +42,37 @@
             color: #333;
             text-decoration: none;
         }
+
         .menu-item:hover {
             background-color: #eee;
         }
+
         .menu-item.selected {
             background-color: #16BA8B;
             color: #ffffff;
         }
+
         .menu-icon {
             width: 24px;
             height: 24px;
             margin-right: 10px;
             fill: currentColor;
         }
+
         .content {
             flex-grow: 1;
             padding: 20px;
             background-color: #ffffff;
             position: relative;
         }
+
         .content-header {
             margin-bottom: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
         .settings-button {
             padding: 10px 20px;
             background-color: #333;
@@ -72,39 +84,56 @@
             top: 20px;
             right: 20px;
         }
+
         .card-container {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-top: 60px; /* Adjusted */
-            gap: 20px;
+            margin-top: 20px;
+            flex-grow: 1;
         }
+
         .card {
-            width: 45%;
-            height: 400px;
+            flex-grow: 1;
+            height: calc(100vh - 160px);
             background: linear-gradient(135deg, #ffffff, #f0f0f0);
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: flex-start;
             align-items: center;
             color: #333;
-            font-size: 20px;
+            font-size: 16px;
             border: solid 2px #e0e0e0;
-            transition: transform 0.3s, box-shadow 0.3s;
+            overflow-y: auto;
+            padding: 20px;
         }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+        .card textarea {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 12px;
+            padding: 20px;
+            box-sizing: border-box;
+            font-size: 16px;
+            line-height: 1.5;
+            resize: none;
+            background-color: transparent;
+            color: #333;
+            overflow-y: auto;
         }
+
         .action-buttons {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
+            align-items: center;
+            width: 150px;
             margin-left: 20px;
-            width: 15%;
-            margin-top: 100px; /* Increased margin to move buttons down */
         }
+
         .action-buttons button {
             margin: 10px 0;
             padding: 12px 20px;
@@ -115,32 +144,43 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
+            width: 100%;
         }
+
         .action-buttons button:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
             background: linear-gradient(45deg, #43E794, #16BA8B);
         }
+
+        .action-buttons form {
+            display: block; width: 100%;
+        }
+
+        .action-buttons button.submit-button {
+            width: 100%;
+        }
     </style>
-    <!-- 包含Font Awesome图标库 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KyZXEAg3QhqLMpG8r+Knujsl5/yyj1U6YDJVxhxG+pnWeRSEEFlL709HfuCLUDpP5OZBMnTUnpHBFokgfUzrGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="container">
         <div class="sidebar">
-            <img src="/static/img/loge.jpg" alt="Logo" class="logo">
+            <!-- 更换图片链接即可 -->
+            <img src="loge.jpg" alt="Logo" class="logo">
             <div class="menu">
-                <a href="/upload" class="menu-item">
-                    <i class="fas fa-file menu-icon"></i>我的文件
+                <!-- 这里可定义各个菜单项 -->
+                <a href="/my_files" class="menu-item">
+                我的文件
                 </a>
                 <a href="/text_recognition" class="menu-item selected">
-                    <i class="fas fa-file-signature menu-icon"></i>文本识别
+                文本识别
                 </a>
                 <a href="/text_classification" class="menu-item">
-                    <i class="fas fa-folder-plus menu-icon"></i>文档分类
+                    文档分类
                 </a>
                 <a href="/help_center" class="menu-item">
-                    <i class="fas fa-question-circle menu-icon"></i>帮助中心
+                    帮助中心
                 </a>
             </div>
         </div>
@@ -150,18 +190,63 @@
                 <button class="settings-button">设置</button>
             </div>
             <div class="card-container">
-                <div class="card">待识别文件</div>
-                <div class="card">识别后文档</div>
+                <div class="card">
+                    {% if ocr_text %}
+                    <textarea id="recognized-text">{{ ocr_text }}</textarea>
+                    {% else %}
+                    识别后文档
+                    {% endif %}
+                </div>
                 <div class="action-buttons">
-                    <button>选词模式</button>
-                    <button>修改</button>
-                    <button>生成文档</button>
+                    <form method="post" action="{% url 'generate_doc' %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="text" id="final-text">
+                        <button type="submit" class="submit-button" onclick="prepareTextForDownload()">生成文档</button>
+                    </form>
+                    <button onclick="translateText()">翻译文本</button>
+                    <button onclick="exportAsPDF()">导出为PDF</button>
+                    <button onclick="copyToClipboard()">复制到剪贴板</button>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        function toggleSelectionMode() {
+            const textarea = document.getElementById('recognized-text');
+            textarea.select();
+        }
 
-    <!-- 引入Font Awesome的图标库 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-Fo3rlrQkTyFLFvjUyh1rbzg9dBZPWL5Sz8hkdLMEeHpJtM4VWnR4B1sDk0Zl6sPbU1s3x1YQ2Z5V1SC6Sypcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        function enableEditing() {
+            const textarea = document.getElementById('recognized-text');
+            textarea.removeAttribute('readonly');
+            textarea.focus();
+        }
+
+        function prepareTextForDownload() {
+            const textarea = document.getElementById('recognized-text');
+            const finalTextInput = document.getElementById('final-text');
+            finalTextInput.value = textarea.value;
+        }
+
+        function translateText() {
+            alert('翻译文本功能');
+        }
+
+        function summarizeText() {
+            alert('总结文本功能');
+        }
+
+        function exportAsPDF() {
+            alert('导出为PDF功能');
+        }
+
+        function copyToClipboard() {
+            const textarea = document.getElementById('recognized-text');
+            textarea.select();
+            document.execCommand('copy');
+            alert('文本已复制到剪贴板');
+        }
+    </script>
 </body>
+
 </html>
